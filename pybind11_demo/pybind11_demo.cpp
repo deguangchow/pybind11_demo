@@ -22,7 +22,8 @@ int add3(int a, int b) {
     return a + b;
 }
 
-PYBIND11_MODULE(example, m) {
+//PYBIND11_MODULE 申明的命名空间 “pybind11_demo”, 即为 import 的.pyd文件名
+PYBIND11_MODULE(pybind11_demo, m) {
     m.doc() = "pybind11 example module";
 
     // Add bindings here
